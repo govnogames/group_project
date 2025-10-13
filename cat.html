@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 — Кот унёс!</title>
+  <style>
+    body {
+      background: #ffeaa7;
+      font-family: 'Comic Sans MS', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 5rem;
+      color: #e17055;
+    }
+    p {
+      font-size: 1.4rem;
+      color: #2d3436;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .cat {
+      font-size: 8rem;
+      margin: 20px;
+      animation: bounce 1.2s infinite alternate;
+    }
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-20px); }
+    }
+    .btn {
+      padding: 12px 30px;
+      background: #fdcb6e;
+      border: 3px dashed #e17055;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cat">🐱</div>
+  <h1>404!</h1>
+  <p>Извините, но кот унёс эту страницу под диван.<br>Он сказал, что это теперь его коробка.</p>
+  <button class="btn" onclick="location.href='index.html'">Попросить кота вернуть</button>
+</body>
+</html>
