@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 Museum</title>
+  <style>
+    body {
+      background: #0f0c29;
+      background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .subtitle {
+      color: #aaa;
+      margin-bottom: 50px;
+      text-align: center;
+      max-width: 700px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+    }
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255,255,255,0.15);
+    }
+    .card h2 {
+      margin: 15px 0;
+      font-size: 1.6rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>404 Museum</h1>
+  <p class="subtitle">Коллекция самых креативных страниц «404 — Не найдено». Каждая ошибка — маленькое произведение искусства.</p>
+
+  <div class="gallery">
+    <div class="card" onclick="location.href='404-space.html'">
+      <div>🌌</div>
+      <h2>Космическая потеря</h2>
+      <p>Страница затерялась в бескрайнем космосе...</p>
+    </div>
+    <div class="card" onclick="location.href='404-cat.html'">
+      <div>🐱</div>
+      <h2>Кот украл страницу</h2>
+      <p>Ваша страница теперь — игрушка для кота.</p>
+    </div>
+    <div class="card" onclick="location.href='404-pixel.html'">
+      <div>🎮</div>
+      <h2>Пиксельный сбой</h2>
+      <p>Ошибка из эпохи 8-битных приставок.</p>
+    </div>
+    <div class="card" onclick="location.href='404-mirror.html'">
+      <div>🪞</div>
+      <h2>Зеркальная иллюзия</h2>
+      <p>Вы смотрите на отражение... но страницы нет.</p>
+    </div>
+  </div>
+</body>
+</html>
