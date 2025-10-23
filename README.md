@@ -5,5 +5,4 @@ Berserk AJAJA
 koroche vse robit
 
 Егор лох
-
 эщкере
